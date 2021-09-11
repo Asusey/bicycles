@@ -1,0 +1,179 @@
+@media (min-width: $min-desktop-whidth) {
+  .callback__wrapper {
+    display: flex;
+    margin: -502px 145px auto;
+  }
+
+  .callback__title {
+    margin: 0;
+    padding-top: 46px;
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 64px;
+    letter-spacing: -0.005em;
+    max-width: 393px;
+    color: $white;
+  }
+
+  .callback__intro {
+    margin: 0;
+    padding-top: 25px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.005em;
+    color: $white;
+    opacity: 0.8;
+    max-width: 381px;
+  }
+
+  .callback__text {
+    margin: 0;
+    padding-bottom: 18px;
+    max-width: 327px;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -0.005em;
+    color: $white;
+  }
+
+  .callback__box {
+    padding-left: 28%;
+  }
+
+  .callback__list {
+    display: grid;
+    grid-template-columns: 327px;
+  }
+
+  .callback__input {
+    margin-bottom: 22px;
+    padding-top: 19px;
+    padding-left: 29px;
+    padding-bottom: 11px;
+    border-radius: 6px;
+    border: 1px solid $border-gray;
+  }
+
+  .callback__input::-webkit-input-placeholder {
+    font-size: 15px;
+    line-height: 24px;
+    color: $input-gray;
+    opacity: 0.5;
+  }
+
+  .callback__button {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 600;
+    color: $input-gray;
+    background-color: $turquoise;
+    border-radius: 6px;
+    border: none;
+    padding-top: 15px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: $min-mobile-whidth) and (max-width: $max-tablet-whidth) {
+  .callback__wrapper {
+    margin: 0 auto;
+    margin-top: -251px;
+    text-align: center;
+  }
+
+  .callback__title {
+    margin: 0 auto;
+    padding-top: 46px;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 42px;
+    letter-spacing: -0.005em;
+    max-width: 525px;
+    color: $white;
+  }
+
+  .callback__intro {
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 150px;
+    max-width: 435px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -0.005em;
+    color: $white;
+    opacity: 0.8;
+  }
+
+  .callback__text {
+    margin: 0 auto;
+    padding-bottom: 29px;
+    max-width: 321px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -0.005em;
+    color: $black;
+  }
+
+  .callback__list {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 42%;
+  }
+
+  .callback__input {
+    margin-bottom: 22px;
+    padding-top: 18px;
+    padding-left: 21px;
+    padding-bottom: 11px;
+    border-radius: 6px;
+    border: 1px solid $border-gray;
+  }
+
+  .callback__input::-webkit-input-placeholder {
+    font-size: 15px;
+    line-height: 24px;
+    color: $input-gray;
+    opacity: 0.5;
+  }
+
+  .callback__button {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 600;
+    color: $input-gray;
+    background-color: $turquoise;
+    border-radius: 6px;
+    border: none;
+    padding-top: 15px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: $min-mobile-whidth) and (max-width: $max-mobile-whidth) {
+  .callback__wrapper {
+    margin: -314px auto 0;
+  }
+
+  .callback__intro {
+    max-width: 288px;
+    padding-bottom: 139px;
+  }
+
+  .callback__list {
+    width: 90%;
+  }
+
+  .callback__text {
+    padding-bottom: 19px;
+  }
+}

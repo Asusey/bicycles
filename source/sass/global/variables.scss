@@ -1,6 +1,6 @@
 // Font
 
-$font-stack: 'Open Sans', 'Arial', sans-serif;
+$font-stack: "Open Sans", "Arial", sans-serif;
 
 // Colors
 
@@ -8,6 +8,19 @@ $white: #ffffff;
 $black: #000000;
 $light-black: #1f1f1f;
 $dark-gray: #131314;
+$light-gray: #48494d;
+$toggle-gray: rgba(20, 21, 23, 0.2);
 $gray: #f6f7f9;
+$bg-gray: #f6f6f6;
 $border-gray: #c9ccd4;
+$input-gray: #1c1c1c;
 $turquoise: #0ad9c6;
+$border-white: rgba(255, 255, 255, 0.2);
+
+// Viewports
+
+$min-desktop-whidth: 1024px;
+$min-tablet-whidth: 768px;
+$max-tablet-whidth: 1023px;
+$min-mobile-whidth: 320px;
+$max-mobile-whidth: 767px;

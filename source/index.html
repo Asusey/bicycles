@@ -1,13 +1,113 @@
 <!DOCTYPE html>
 <html class="page" lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Велосипеды</title>
-  <link rel="stylesheet" href="css/style.min.css">
-</head>
-<body>
-  <h1>Добро пожаловать в Лигу А.</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Велосипеды</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo">
+          <svg
+            class="page-header__logo-image"
+            width="68"
+            height="21"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.36 0v20.05h-3.29V5.82l-1.1 1.39-2.15 2.76-.09.1-.14-.1-2.15-2.76-1.1-1.43v14.27H0V0h3.34l3.39 4.3L10.07 0h3.3ZM8.3 10.07l-.1-.1.1.1Z"
+              fill="#0AD9C6"
+            />
+            <path
+              d="m8.45 9.98-.1.09H8.3l.15-.1ZM38.2 5.61l-9.12 6.7 2.12 2.88 9.12-6.7-2.11-2.88Z"
+              fill="#0AD9C6"
+            />
+            <path
+              d="M26.67 3a7.04 7.04 0 1 0 0 14.09 7.04 7.04 0 0 0 0-14.09Zm0 10.27a3.22 3.22 0 1 1 0-6.45 3.22 3.22 0 0 1 0 6.45ZM43.64 3a7.04 7.04 0 1 0 7.04 7.04A7.1 7.1 0 0 0 43.64 3Zm0 10.27a3.22 3.22 0 1 1 0-6.45 3.22 3.22 0 0 1 0 6.45ZM67.6.24v20.04h-3.34V9.88l-2.82-2.67-2.1-2.06v15.13H56V.24h3.34L63.25 4l1 .95V.24h3.35Z"
+              fill="#0AD9C6"
+            />
+            <path fill="#0AD9C6" d="M37 3h6v4h-6z" />
+          </svg>
+        </a>
+        <nav class="main-nav main-nav--closed">
+          <!-- main-nav--closed переключатель при закрытом меню
+               main-nav--opened переключатель при открытом меню
+               main-nav--nojs при отключенном JS -->
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">О нас</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Виды велосипедов</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Видео про велосипеды</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <h1 class="visually-hidden">Интернет-магазин вилосипедов</h1>
+      <section class="callback">
+        <div class="callback__wrapper">
+          <div class="callback__inner">
+            <h2 class="callback__title">
+              Мы продаем велосипеды
+            </h2>
+            <p class="callback__intro">
+              Наш магазин отбирает только самые лучшие велосипеды для продажи
+            </p>
+          </div>
+
+          <div class="callback__box">
+            <h2 class="visually-hidden">Форма обратной связи</h2>
+            <p class="callback__text">
+              Заполните поля ниже и мы подберем велосипед Вашей мечты
+            </p>
+            <form
+              class="callback__form"
+              method="POST"
+              action="https://echo.htmlacademy.ru/"
+            >
+              <div class="callback__list">
+                <label class="visually-hidden" for="name">Имя</label>
+                <input
+                  class="callback__input"
+                  id="name"
+                  type="text"
+                  name="name"
+                  placeholder="Введите Ваше Имя"
+                />
+                <label class="visually-hidden" for="phone">
+                  Номер телефона
+                </label>
+                <input
+                  class="callback__input"
+                  id="phone"
+                  type="tel"
+                  name="phone"
+                  placeholder="Введите Ваш номер телефона"
+                />
+                <button class="callback__button" type="submit">
+                  Подобрать велосипед мечты
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
