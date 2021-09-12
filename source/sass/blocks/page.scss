@@ -1,5 +1,4 @@
 .page {
-  width: 100%;
   min-width: 320px;
   height: 100%;
   font-family: $font-stack;
@@ -13,6 +12,5 @@
   color: $black;
   position: relative;
   display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  align-content: flex-start;
+  grid-template-rows: auto 1fr auto;
 }

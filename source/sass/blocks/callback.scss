@@ -2,6 +2,7 @@
   .callback__wrapper {
     display: flex;
     margin: -502px 145px auto;
+    padding-bottom: 207px;
   }
 
   .callback__title {
@@ -11,7 +12,7 @@
     font-size: 46px;
     line-height: 64px;
     letter-spacing: -0.005em;
-    max-width: 393px;
+    min-width: 393px;
     color: $white;
   }
 
@@ -40,7 +41,7 @@
   }
 
   .callback__box {
-    padding-left: 28%;
+    padding-left: 19%;
   }
 
   .callback__list {
