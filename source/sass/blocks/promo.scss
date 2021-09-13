@@ -89,6 +89,16 @@
     margin-top: -185px;
   }
 
+  .promo__button::after {
+    position: absolute;
+    content: "";
+    top: 33px;
+    left: 40px;
+    border-top: 13px solid transparent;
+    border-left: 17px solid $black;
+    border-bottom: 12px solid transparent;
+  }
+
   .promo__button svg {
     width: 18px;
     height: 25px;
