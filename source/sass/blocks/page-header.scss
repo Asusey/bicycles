@@ -12,6 +12,7 @@
   }
 
   .page-header__wrapper {
+    max-width: 1170px;
     display: flex;
     flex-direction: column;
     min-height: 825px;
@@ -65,7 +66,7 @@
   }
 
   .page-header__wrapper {
-    min-height: 369px;
+    min-height: 370px;
     margin: 0 auto;
   }
 

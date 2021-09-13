@@ -1,7 +1,9 @@
 @media (min-width: $min-desktop-whidth) {
   .callback__wrapper {
+    max-width: 1170px;
     display: flex;
-    margin: -502px 145px auto;
+    justify-content: center;
+    margin: -502px auto auto;
     padding-bottom: 239px;
   }
 
@@ -12,7 +14,7 @@
     font-size: 46px;
     line-height: 64px;
     letter-spacing: -0.005em;
-    min-width: 393px;
+    max-width: 393px;
     color: $white;
   }
 
@@ -41,7 +43,7 @@
   }
 
   .callback__box {
-    padding-left: 18%;
+    padding-left: 14%;
   }
 
   .callback__list {
@@ -59,6 +61,7 @@
   }
 
   .callback__input::-webkit-input-placeholder {
+    font-family: $font-stack;
     font-size: 15px;
     line-height: 24px;
     color: $input-gray;
@@ -88,7 +91,7 @@
 
   .callback__title {
     margin: 0 auto;
-    padding-top: 46px;
+    padding-top: 45px;
     font-weight: bold;
     font-size: 30px;
     line-height: 42px;
@@ -131,15 +134,16 @@
   }
 
   .callback__input {
-    margin-bottom: 22px;
+    margin-bottom: 20px;
     padding-top: 18px;
-    padding-left: 21px;
-    padding-bottom: 11px;
+    padding-left: 25px;
+    padding-bottom: 13px;
     border-radius: 6px;
     border: 1px solid $border-gray;
   }
 
   .callback__input::-webkit-input-placeholder {
+    font-family: $font-stack;
     font-size: 15px;
     line-height: 24px;
     color: $input-gray;
@@ -154,9 +158,9 @@
     background-color: $turquoise;
     border-radius: 6px;
     border: none;
-    padding-top: 15px;
+    padding-top: 13px;
     padding-left: 5px;
-    padding-bottom: 10px;
+    padding-bottom: 14px;
   }
 }
 

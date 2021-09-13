@@ -133,6 +133,92 @@
         </div>
       </section>
 
+      <section class="catalog-types">
+        <div class="catalog-types__wrapper">
+          <h2 class="catalog-types__title">Виды велосипедов</h2>
+          <ul class="catalog-types__list">
+            <li class="catalog-types__item">
+              <picture>
+                <source
+                type="image/webp"
+                media="(min-width: 1024px)"
+                srcset="./img/road-bike-desktop.webp 1x, ./img/road-bike-desktop@2x.webp 2x"
+              />
+                <source
+                type="image/webp"
+                srcset="./img/road-bike-tablet.webp 1x, ./img/road-bike-tablet@2x.webp 2x"
+              />
+                <source
+                media="(min-width: 1024px)"
+                srcset="./img/road-bike-desktop.jpg 1x, ./img/road-bike-desktop@2x.jpg 2x"
+              />
+                <img
+                  class="catalog-types__image"
+                  src="./img/road-bike-tablet.jpg"
+                  srcset="./img/road-bike-tablet@2x.jpg 2x"
+                  width="270"
+                  height="300"
+                  alt="Дорожный велосипед на фоне кирпичной стены, увитой плющом"
+                />
+              </picture>
+              <p class="catalog-types__subtitle">Дорожный велосипед</p>
+            </li>
+            <li class="catalog-types__item">
+              <picture>
+                <source
+                type="image/webp"
+                media="(min-width: 1024px)"
+                srcset="./img/mountain-bike-desktop.webp 1x, ./img/mountain-bike-desktop@2x.webp 2x"
+              />
+                <source
+                type="image/webp"
+                srcset="./img/mountain-bike-tablet.webp 1x, ./img/mountain-bike-tablet@2x.webp 2x"
+              />
+                <source
+                media="(min-width: 1024px)"
+                srcset="./img/mountain-bike-desktop.jpg 1x, ./img/mountain-bike-desktop@2x.jpg 2x"
+              />
+                <img
+                  class="catalog-types__image"
+                  src="./img/mountain-bike-tablet.jpg"
+                  srcset="./img/mountain-bike-tablet@2x.jpg 2x"
+                  width="270"
+                  height="300"
+                  alt="Велосипед на фоне неба и гор"
+                />
+              </picture>
+              <p class="catalog-types__subtitle">Горный велосипед</p>
+            </li>
+            <li class="catalog-types__item">
+              <picture>
+                <source
+                type="image/webp"
+                media="(min-width: 1024px)"
+                srcset="./img/kids-bike-desktop.webp 1x, ./img/kids-bike-desktop@2x.webp 2x"
+              />
+                <source
+                type="image/webp"
+                srcset="./img/kids-bike-tablet.webp 1x, ./img/kids-bike-tablet@2x.webp 2x"
+              />
+                <source
+                media="(min-width: 1024px)"
+                srcset="./img/kids-bike-desktop.jpg 1x, ./img/kids-bike-desktop@2x.jpg 2x"
+              />
+                <img
+                  class="catalog-types__image"
+                  src="./img/kids-bike-tablet.jpg"
+                  srcset="./img/kids-bike-tablet@2x.jpg 2x"
+                  width="270"
+                  height="300"
+                  alt="Детский розовый велосипед на фоне светлой стены"
+                />
+              </picture>
+              <p class="catalog-types__subtitle">Детский велосипед</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
       <footer class="page-footer">
         <div class="page-footer__wrapper">
           <h2 class="page-footer__title">
@@ -144,41 +230,45 @@
           </p>
           <picture>
             <source
-            type="image/webp"
-            media="(min-width: 1024px)"
-            srcset="./img/map-desktop.webp 1x, ./img/map-desktop@2x.webp 2x"
-          />
+              type="image/webp"
+              media="(min-width: 1024px)"
+              srcset="./img/map-desktop.webp 1x, ./img/map-desktop@2x.webp 2x"
+            />
             <source
-            type="image/webp"
-            media="(min-width: 768px)"
-            srcset="./img/map-tablet.webp 1x, ./img/map-tablet@2x.webp 2x"
-          />
+              type="image/webp"
+              media="(min-width: 768px)"
+              srcset="./img/map-tablet.webp 1x, ./img/map-tablet@2x.webp 2x"
+            />
             <source
-            type="image/webp"
-            srcset="./img/map-mobile.webp 1x, ./img/map-mobile@2x.webp 2x"
-          />
+              type="image/webp"
+              srcset="./img/map-mobile.webp 1x, ./img/map-mobile@2x.webp 2x"
+            />
             <source
-            media="(min-width: 1024px)"
-            srcset="./img/map-desktop.jpg 1x, ./img/map-desktop@2x.jpg 2x"
-          />
+              media="(min-width: 1024px)"
+              srcset="./img/map-desktop.jpg 1x, ./img/map-desktop@2x.jpg 2x"
+            />
             <source
               media="(min-width: 768px)"
               srcset="./img/map-tablet.jpg 1x, ./img/map-tablet@2x.jpg 2x"
             />
-          <img
-            class="page-footer__map"
-            src="./img/map-mobile.jpg"
-            srcset="./img/map-mobile@2x.jpg 2x"
-            width="957"
-            height="530"
-            alt="Наш офис по адресу: Большая Конюшенная улица, дом 19/8, Санкт-Петербург"
-          />
+            <img
+              class="page-footer__map"
+              src="./img/map-mobile.jpg"
+              srcset="./img/map-mobile@2x.jpg 2x"
+              width="957"
+              height="530"
+              alt="Наш офис по адресу: Большая Конюшенная улица, дом 19/8, Санкт-Петербург"
+            />
           </picture>
           <ul class="page-footer__contacts-list">
-            <li class="page-footer__contacts-item page-footer__contacts-item--mail">
+            <li
+              class="page-footer__contacts-item page-footer__contacts-item--mail"
+            >
               puteshestviemechta@gmail.ru
             </li>
-            <li class="page-footer__contacts-item page-footer__contacts-item--phone">
+            <li
+              class="page-footer__contacts-item page-footer__contacts-item--phone"
+            >
               +7 (499) -784-684-46
             </li>
           </ul>

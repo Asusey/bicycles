@@ -30,7 +30,7 @@
   line-height: 38px;
   color: $turquoise;
   letter-spacing: -1.27273px;
-  padding-bottom: 14px;
+  padding-bottom: 12px;
 }
 
 @media screen and (min-width: $min-desktop-whidth) {
@@ -54,6 +54,7 @@
 @media screen and (min-width: $min-tablet-whidth) and (max-width: $max-tablet-whidth) {
   .advantages__wrapper {
     padding-top: 72px;
+    padding-bottom: 73px;
   }
 
   .advantages__litle {
@@ -71,6 +72,7 @@
 @media screen and (min-width: $min-mobile-whidth) and (max-width: $max-mobile-whidth) {
   .advantages__wrapper {
     padding-top: 72px;
+    padding-bottom: 81px;
   }
 
   .advantages__litle {
@@ -82,7 +84,7 @@
   .advantages__list {
     grid-template-columns: 263px;
     justify-content: center;
-    gap: 37px;
+    gap: 40px;
   }
 
   .advantages__item {
