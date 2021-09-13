@@ -67,6 +67,10 @@
     grid-template-columns: 263px 263px;
     gap: 1.8em;
   }
+
+  .advantages__item span {
+    padding-bottom: 14px;
+  }
 }
 
 @media screen and (min-width: $min-mobile-whidth) and (max-width: $max-mobile-whidth) {

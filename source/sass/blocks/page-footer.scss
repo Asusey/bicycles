@@ -59,7 +59,7 @@
 
 @media screen and (min-width: $min-desktop-whidth) {
   .page-footer__title {
-    padding-top: 152px;
+    padding-top: 248px;
     padding-bottom: 30px;
     font-size: 30px;
     line-height: 30px;
@@ -97,7 +97,7 @@
 
 @media screen and (min-width: $min-tablet-whidth) and (max-width: $max-tablet-whidth) {
   .page-footer__title {
-    padding-top: 69px;
+    padding-top: 155px;
     padding-bottom: 21px;
     font-size: 24px;
     line-height: 30px;
@@ -137,8 +137,12 @@
 }
 
 @media screen and (min-width: $min-mobile-whidth) and (max-width: $max-mobile-whidth) {
+  .page-footer__wrapper {
+    padding-bottom: 45px;
+  }
+
   .page-footer__title {
-    padding-top: 69px;
+    padding-top: 119px;
     padding-bottom: 21px;
     font-size: 18px;
     line-height: 30px;

@@ -59,11 +59,11 @@
     line-height: 30px;
     letter-spacing: -0.005em;
     color: $light-black;
-    padding-bottom: 30px;
+    padding-bottom: 32px;
   }
 
   .catalog-types__list {
-    padding-bottom: 151px;
+    padding-bottom: 149px;
     display: grid;
     grid-template-columns: 342px 342px 342px;
     gap: 2.3em;
@@ -134,7 +134,7 @@
   }
 
   .catalog-types__wrapper {
-    padding-bottom: 23px;
+    padding-bottom: 19px;
   }
 
   .catalog-types__title {
@@ -164,7 +164,7 @@
 
 @media screen and (min-width: $min-mobile-whidth) and (max-width: $max-mobile-whidth) {
   .catalog-types__wrapper {
-    padding-bottom: 10px;
+    padding-bottom: 12px;
   }
 
   .catalog-types__title {
