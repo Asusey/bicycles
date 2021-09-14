@@ -6,6 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Велосипеды</title>
     <link rel="stylesheet" href="css/style.min.css" />
+    <link
+      rel="preload"
+      type="font/woff2"
+      href="./fonts/open-sans-v23-latin_cyrillic-300.woff2"
+      as="font"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      type="font/woff2"
+      href="./fonts/open-sans-v23-latin_cyrillic-600.woff2"
+      as="font"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      type="font/woff2"
+      href="./fonts/open-sans-v23-latin_cyrillic-700.woff2"
+      as="font"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      type="font/woff2"
+      href="./fonts/open-sans-v23-latin_cyrillic-regular.woff2"
+      as="font"
+      crossorigin
+    />
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -42,16 +70,22 @@
           </button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">О нас</a>
+              <a class="main-nav__link" href="#about-us">О нас</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Виды велосипедов</a>
+              <a class="main-nav__link" href="#bicycl-types">
+                Виды велосипедов
+              </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Видео про велосипеды</a>
+              <a class="main-nav__link" href="#bicycl-video">
+                Видео про велосипеды
+              </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Контакты</a>
+              <a class="main-nav__link" href="#contacts">
+                Контакты
+              </a>
             </li>
           </ul>
         </nav>
@@ -89,6 +123,7 @@
                   type="text"
                   name="name"
                   placeholder="Введите Ваше Имя"
+                  required
                 />
                 <label class="visually-hidden" for="phone">
                   Номер телефона
@@ -99,6 +134,9 @@
                   type="tel"
                   name="phone"
                   placeholder="Введите Ваш номер телефона"
+                  pattern="[+]7\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+                  title="Используйте формат: +7 (777) 777-77-77"
+                  required
                 />
                 <button class="callback__button" type="submit">
                   Подобрать велосипед мечты
@@ -109,7 +147,7 @@
         </div>
       </section>
 
-      <section class="advantages">
+      <section class="advantages" id="about-us">
         <div class="advantages__wrapper">
           <h2 class="advantages__litle">Несколько фактов о нас</h2>
           <ul class="advantages__list">
@@ -133,7 +171,7 @@
         </div>
       </section>
 
-      <section class="catalog-types">
+      <section class="catalog-types" id="bicycl-types">
         <div class="catalog-types__wrapper">
           <h2 class="catalog-types__title">Виды велосипедов</h2>
           <ul class="catalog-types__list">
@@ -246,7 +284,7 @@
         </div>
       </section>
 
-      <section class="promo">
+      <section class="promo" id="bicycl-video">
         <div class="promo__wrapper">
           <h2 class="promo__title">Видео про велосипеды</h2>
           <p class="promo__text">
@@ -264,7 +302,7 @@
         </div>
       </section>
 
-      <footer class="page-footer">
+      <footer class="page-footer" id="contacts">
         <div class="page-footer__wrapper">
           <h2 class="page-footer__title">
             Как нас найти?
@@ -320,5 +358,6 @@
         </div>
       </footer>
     </main>
+    <script src="./js/script.min.js"></script>
   </body>
 </html>
