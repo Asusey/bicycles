@@ -7,7 +7,7 @@ const autoprefixer = require("autoprefixer");
 const csso = require("postcss-csso");
 const rename = require("gulp-rename");
 const htmlmin = require("gulp-htmlmin");
-const uglify = require("gulp-uglify");
+const terser = require("gulp-terser-js");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
@@ -45,7 +45,7 @@ const html = () => {
 const scripts = () => {
   return gulp
     .src("source/js/script.js")
-    .pipe(uglify())
+    .pipe(terser())
     .pipe(rename("script.min.js"))
     .pipe(gulp.dest("build/js"))
     .pipe(sync.stream());
@@ -148,13 +148,15 @@ const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series(styles));
 
   gulp.watch("source/*.html", gulp.series(html, reload));
+
+  gulp.watch("source/js/**/*.js", gulp.series(scripts, reload));
 };
 
 // Build
 
 const build = gulp.series(
   clean,
-  gulp.parallel(styles, html, sprite, copy, images, createWebp)
+  gulp.parallel(styles, html, scripts, sprite, copy, images, createWebp)
 );
 
 exports.build = build;
@@ -163,6 +165,6 @@ exports.build = build;
 
 exports.default = gulp.series(
   clean,
-  gulp.parallel(styles, html, sprite, copy, createWebp),
+  gulp.parallel(styles, html, scripts, sprite, copy, createWebp),
   gulp.series(server, watcher)
 );

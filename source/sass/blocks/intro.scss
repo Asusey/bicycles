@@ -1,0 +1,121 @@
+.intro {
+  background-color: $dark-gray;
+  background-position: 75% 7px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.intro__logo {
+  display: block;
+}
+
+.intro__title {
+  font-weight: bold;
+  letter-spacing: -0.005em;
+  color: $white;
+}
+
+.intro__text {
+  font-weight: 300;
+  letter-spacing: -0.005em;
+  color: $white;
+  opacity: 0.8;
+}
+
+@media (min-width: $min-desktop-whidth) {
+  .intro {
+    background-image: url("../../img/bike-bg-desktop.webp");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/bike-bg-desktop@2x.webp");
+    }
+  }
+
+  .intro__wrapper {
+    margin-top: -24px;
+    margin-left: 19.5%;
+    padding-top: 312px;
+    padding-bottom: 240px;
+  }
+
+  .intro__logo {
+    margin-top: 24px;
+  }
+
+  .intro__title {
+    margin: 0;
+    padding-top: 22px;
+    font-size: 46px;
+    line-height: 64px;
+    max-width: 393px;
+  }
+
+  .intro__text {
+    margin: 0;
+    padding-top: 25px;
+    font-size: 20px;
+    line-height: 32px;
+    max-width: 381px;
+  }
+}
+
+@media screen and (min-width: $min-mobile-whidth) and (max-width: $max-tablet-whidth) {
+  .intro {
+    background-image: url("../../img/bike-bg-tablet.webp");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/bike-bg-tablet@2x.webp");
+    }
+  }
+
+  .intro__logo {
+    position: absolute;
+    top: 20px;
+    left: 22px;
+  }
+
+  .intro__title {
+    margin: 0 auto;
+    padding-top: 135px;
+    font-size: 30px;
+    line-height: 42px;
+    max-width: 525px;
+    text-align: center;
+  }
+
+  .intro__text {
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 79px;
+    max-width: 435px;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: $min-mobile-whidth) and (max-width: $max-mobile-whidth) {
+  .intro {
+    background-image: url("../../img/bike-bg-mobile.webp");
+    background-position: 39% -1px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/bike-bg-mobile@2x.webp");
+    }
+  }
+
+  .intro__logo {
+    position: absolute;
+    top: 20px;
+    left: 17px;
+  }
+
+  .intro__title {
+    padding-top: 121px;
+  }
+
+  .intro__text {
+    max-width: 288px;
+    padding-bottom: 69px;
+  }
+}

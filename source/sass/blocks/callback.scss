@@ -1,16 +1,3 @@
-.callback__title {
-  font-weight: bold;
-  letter-spacing: -0.005em;
-  color: $white;
-}
-
-.callback__intro {
-  font-weight: 300;
-  letter-spacing: -0.005em;
-  color: $white;
-  opacity: 0.8;
-}
-
 .callback__text {
   font-weight: 600;
   letter-spacing: -0.005em;
@@ -39,25 +26,12 @@
   .callback__wrapper {
     max-width: 1170px;
     display: flex;
-    justify-content: center;
-    margin: -502px auto auto;
-    padding-bottom: 239px;
-  }
+    flex-direction: column;
 
-  .callback__title {
-    margin: 0;
-    padding-top: 46px;
-    font-size: 46px;
-    line-height: 64px;
-    max-width: 393px;
-  }
-
-  .callback__intro {
-    margin: 0;
-    padding-top: 25px;
-    font-size: 20px;
-    line-height: 32px;
-    max-width: 381px;
+    margin: 0 auto;
+    margin-top: -502px;
+    margin-left: 57.8%;
+    padding-bottom: 241px;
   }
 
   .callback__text {
@@ -71,6 +45,7 @@
 
   .callback__box {
     padding-left: 14%;
+    padding-top: 34px;
   }
 
   .callback__list {
@@ -97,35 +72,23 @@
 @media screen and (min-width: $min-mobile-whidth) and (max-width: $max-tablet-whidth) {
   .callback__wrapper {
     margin: 0 auto;
-    margin-top: -251px;
+    //margin-top: -251px;
     text-align: center;
   }
 
-  .callback__title {
-    margin: 0 auto;
-    padding-top: 45px;
-    font-size: 30px;
-    line-height: 42px;
-    max-width: 525px;
-  }
-
-  .callback__intro {
-    margin: 0 auto;
-    padding-top: 20px;
-    padding-bottom: 150px;
-    max-width: 435px;
-    font-size: 18px;
-    line-height: 32px;
-    text-align: center;
+  .callback__box {
+    padding-top: 300px;
   }
 
   .callback__text {
     margin: 0 auto;
+    padding-top: 70px;
     padding-bottom: 29px;
     max-width: 321px;
     font-size: 18px;
     line-height: 28px;
     text-align: center;
+    color: $black;
   }
 
   .callback__list {
@@ -153,12 +116,7 @@
 
 @media screen and (min-width: $min-mobile-whidth) and (max-width: $max-mobile-whidth) {
   .callback__wrapper {
-    margin: -314px auto 0;
-  }
-
-  .callback__intro {
-    max-width: 288px;
-    padding-bottom: 139px;
+    margin: 0 auto;
   }
 
   .callback__list {

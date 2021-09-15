@@ -1,16 +1,22 @@
 @media (min-width: $min-desktop-whidth) {
   .main-nav__list {
     list-style: none;
-    margin: 0 149px;
-    padding: 17px 18px 8px;
+    margin: 0 auto;
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     border-bottom: 1px solid $border-white;
   }
 
   .main-nav__item {
-    text-align: center;
+    padding-top: 17px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    padding-right: 115px;
+  }
+
+  .main-nav__item:last-child {
+    padding-right: 0;
   }
 
   .main-nav__link {
@@ -78,7 +84,7 @@
 
   .main-nav__toggle {
     position: absolute;
-    top: -55px;
+    top: 0;
     right: 0;
     z-index: 2;
     display: block;
@@ -141,11 +147,11 @@
     display: none;
   }
 
-  .main-nav--nojs .main-nav__toggle {
-    display: none;
-  }
-
   .main-nav--nojs .main-nav__item {
     display: block;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
   }
 }
