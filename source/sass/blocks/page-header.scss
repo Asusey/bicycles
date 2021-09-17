@@ -1,6 +1,5 @@
 .page-header__wrapper {
   margin: 0 auto;
-  //width: 100%;
 }
 
 @media (min-width: $min-desktop-whidth) {
@@ -11,8 +10,6 @@
     bottom: 0;
     right: 0;
     max-width: 879px;
-    display: flex;
-    flex-direction: column;
-    //min-height: 825px;
+    max-height: 69px;
   }
 }

@@ -5,14 +5,14 @@
   align-items: center;
 }
 
-.page-footer__title {
+.page-footer h2 {
   margin: 0;
   font-weight: 600;
   color: $light-black;
   line-height: 30px;
 }
 
-.page-footer__contacts {
+.page-footer p {
   margin: 0 auto;
   text-align: center;
   font-size: 17px;
@@ -29,7 +29,7 @@
   margin: 0 auto;
 }
 
-.page-footer__contacts-item {
+.page-footer a {
   color: $black;
   opacity: 0.5;
   font-size: 16px;
@@ -57,17 +57,21 @@
   height: 20px;
 }
 
-
 @media screen and (min-width: $min-desktop-whidth) {
-  .page-footer__title {
+  .page-footer h2 {
     padding-top: 248px;
     padding-bottom: 30px;
     font-size: 30px;
   }
 
-  .page-footer__contacts {
+  .page-footer p {
     max-width: 467px;
     padding-bottom: 40px;
+  }
+
+  .page-footer img {
+    width: 957px;
+    height: 530px;
   }
 
   .page-footer__contacts-list {
@@ -96,23 +100,23 @@
 }
 
 @media screen and (min-width: $min-tablet-whidth) and (max-width: $max-tablet-whidth) {
-  .page-footer__title {
+  .page-footer h2 {
     padding-top: 155px;
     padding-bottom: 21px;
     font-size: 24px;
   }
 
-  .page-footer__contacts {
+  .page-footer p {
     padding-bottom: 20px;
   }
 
-  .page-footer__map {
+  .page-footer img {
     width: 698px;
     height: 545px;
   }
 
   .page-footer__contacts-list {
-    padding: 12px 0 55px 47px;
+    padding: 10px 0 55px 47px;
     min-width: 528px;
   }
 
@@ -121,7 +125,7 @@
   }
 
   .page-footer__contacts-item--mail::before {
-    top: 3px;
+    top: 4px;
     left: -39px;
   }
 
@@ -130,8 +134,8 @@
   }
 
   .page-footer__contacts-item--phone::before {
-    top: -2px;
-    left: -32px;
+    top: 0;
+    left: -33px;
   }
 }
 
@@ -140,22 +144,27 @@
     padding-bottom: 45px;
   }
 
-  .page-footer__title {
+  .page-footer h2 {
     padding-top: 119px;
     padding-bottom: 21px;
     font-size: 18px;
   }
 
-  .page-footer__contacts {
+  .page-footer p {
     margin-left: 25px;
     margin-right: 25px;
     padding-bottom: 18px;
   }
 
+  .page-footer img {
+    width: 320px;
+    height: 250px;
+  }
+
   .page-footer__contacts-list {
     display: grid;
     grid-template-columns: 1fr;
-    padding-top: 16px;
+    padding-top: 11px;
   }
 
   .page-footer__contacts-item--mail {
@@ -168,12 +177,12 @@
   }
 
   .page-footer__contacts-item--mail::before {
-    top: 4px;
+    top: 7px;
     left: -36px;
   }
 
   .page-footer__contacts-item--phone::before {
     top: 15px;
-    left: -6px;
+    left: -7px;
   }
 }

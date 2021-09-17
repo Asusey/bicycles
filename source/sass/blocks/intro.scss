@@ -5,17 +5,17 @@
   background-size: cover;
 }
 
-.intro__logo {
+.intro a {
   display: block;
 }
 
-.intro__title {
+.intro h2 {
   font-weight: bold;
   letter-spacing: -0.005em;
   color: $white;
 }
 
-.intro__text {
+.intro p {
   font-weight: 300;
   letter-spacing: -0.005em;
   color: $white;
@@ -32,17 +32,19 @@
   }
 
   .intro__wrapper {
+    margin: 0 auto;
+    margin-right: 54%;
     margin-top: -24px;
-    margin-left: 19.5%;
     padding-top: 312px;
     padding-bottom: 240px;
+    max-width: 381px;
   }
 
-  .intro__logo {
+  .intro a {
     margin-top: 24px;
   }
 
-  .intro__title {
+  .intro h2 {
     margin: 0;
     padding-top: 22px;
     font-size: 46px;
@@ -50,7 +52,7 @@
     max-width: 393px;
   }
 
-  .intro__text {
+  .intro p {
     margin: 0;
     padding-top: 25px;
     font-size: 20px;
@@ -68,22 +70,21 @@
     }
   }
 
-  .intro__logo {
-    position: absolute;
-    top: 20px;
-    left: 22px;
+  .intro a {
+    padding-top: 20px;
+    padding-left: 22px;
   }
 
-  .intro__title {
+  .intro h2 {
     margin: 0 auto;
-    padding-top: 135px;
+    padding-top: 81px;
     font-size: 30px;
     line-height: 42px;
     max-width: 525px;
     text-align: center;
   }
 
-  .intro__text {
+  .intro p {
     margin: 0 auto;
     padding-top: 20px;
     padding-bottom: 79px;
@@ -104,17 +105,16 @@
     }
   }
 
-  .intro__logo {
-    position: absolute;
-    top: 20px;
-    left: 17px;
+  .intro a {
+    padding-top: 20px;
+    padding-left: 17px;
   }
 
-  .intro__title {
-    padding-top: 121px;
+  .intro h2 {
+    padding-top: 67px;
   }
 
-  .intro__text {
+  .intro p {
     max-width: 288px;
     padding-bottom: 69px;
   }

@@ -34,7 +34,8 @@
 }
 
 @media screen and (min-width: $min-mobile-whidth) and (max-width: $max-tablet-whidth) {
-  .main-nav {
+  .main-nav--closed {
+    display: block;
     position: relative;
     background-color: $white;
   }

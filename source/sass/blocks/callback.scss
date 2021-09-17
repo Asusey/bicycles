@@ -1,10 +1,10 @@
-.callback__text {
+.callback p {
   font-weight: 600;
   letter-spacing: -0.005em;
   color: $white;
 }
 
-.callback__input::-webkit-input-placeholder {
+.callback__list input::-webkit-input-placeholder {
   font-family: $font-stack;
   font-size: 15px;
   line-height: 24px;
@@ -12,7 +12,7 @@
   opacity: 0.5;
 }
 
-.callback__button {
+.callback__list button {
   font-size: 15px;
   line-height: 24px;
   font-weight: 600;
@@ -20,6 +20,7 @@
   background-color: $turquoise;
   border-radius: 6px;
   border: none;
+  cursor: pointer;
 }
 
 @media (min-width: $min-desktop-whidth) {
@@ -34,7 +35,7 @@
     padding-bottom: 241px;
   }
 
-  .callback__text {
+  .callback p {
     margin: 0;
     padding-bottom: 18px;
     max-width: 327px;
@@ -53,7 +54,7 @@
     grid-template-columns: 327px;
   }
 
-  .callback__input {
+  .callback__list input {
     margin-bottom: 22px;
     padding-top: 19px;
     padding-left: 29px;
@@ -62,7 +63,7 @@
     border: 1px solid $border-gray;
   }
 
-  .callback__button {
+  .callback__list button {
     padding-top: 15px;
     padding-left: 5px;
     padding-bottom: 10px;
@@ -80,7 +81,7 @@
     padding-top: 300px;
   }
 
-  .callback__text {
+  .callback p {
     margin: 0 auto;
     padding-top: 70px;
     padding-bottom: 29px;
@@ -98,7 +99,7 @@
     width: 42%;
   }
 
-  .callback__input {
+  .callback__list input {
     margin-bottom: 20px;
     padding-top: 18px;
     padding-left: 22px;
@@ -107,7 +108,7 @@
     border: 1px solid $border-gray;
   }
 
-  .callback__button {
+  .callback__list button {
     padding-top: 16px;
     padding-left: 5px;
     padding-bottom: 11px;
@@ -123,11 +124,11 @@
     width: 90%;
   }
 
-  .callback__text {
+  .callback p {
     padding-bottom: 19px;
   }
 
-  .callback__button {
+  .callback__list button {
     padding-top: 13px;
     padding-bottom: 14px;
   }
