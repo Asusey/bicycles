@@ -48,6 +48,10 @@
   z-index: 1;
   cursor: pointer;
 
+  &:hover {
+    background-color: $light-gray;
+  }
+
   &:active {
     opacity: 0.7;
   }

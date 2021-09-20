@@ -134,7 +134,7 @@
                 <!-- 1x: 270px; 2x: 540px -->
                 <img src="./img/road-bike-tablet.jpg" srcset="./img/road-bike-tablet@2x.jpg 2x" width="270" height="300" alt="Дорожный велосипед на фоне кирпичной стены, увитой плющом">
               </picture>
-              <p>Дорожный велосипед</p>
+              <a href="#">Дорожный велосипед</a>
             </li>
             <li class="catalog-types__item">
               <picture>
@@ -154,7 +154,7 @@
                 <!-- 1x: 270px; 2x 540px -->
                 <img src="./img/mountain-bike-tablet.jpg" srcset="./img/mountain-bike-tablet@2x.jpg 2x" width="270" height="300" alt="Велосипед на фоне неба и гор">
               </picture>
-              <p>Горный велосипед</p>
+              <a href="#">Горный велосипед</a>
             </li>
             <li class="catalog-types__item">
               <picture>
@@ -174,7 +174,7 @@
                 <!-- 1x: 1x 270px; 2x 540px -->
                 <img src="./img/kids-bike-tablet.jpg" srcset="./img/kids-bike-tablet@2x.jpg 2x" width="270" height="300" alt="Детский розовый велосипед на фоне светлой стены">
               </picture>
-              <p>Детский велосипед</p>
+              <a href="#">Детский велосипед</a>
             </li>
           </ul>
         </div>
@@ -191,44 +191,46 @@
           <button class="promo__button" type="button"></button>
         </div>
       </section>
-
-      <footer class="page-footer" id="contacts">
-        <div class="page-footer__wrapper">
-          <h2>
-            Как нас найти?
-          </h2>
-          <p>
-            Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д.
-            19
-          </p>
-          <picture>
-            <source type="image/webp" media="(min-width: 1024px)" srcset="./img/map-desktop.webp 1x, ./img/map-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="./img/map-tablet.webp 1x, ./img/map-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="./img/map-mobile.webp 1x, ./img/map-mobile@2x.webp 2x">
-            <!-- 1x: 957px; 2x: 1914px -->
-            <source media="(min-width: 1024px)" srcset="./img/map-desktop.jpg 1x, ./img/map-desktop@2x.jpg 2x">
-            <!-- 1x: 698px; 2x: 1396px -->
-            <source media="(min-width: 768px)" srcset="./img/map-tablet.jpg 1x, ./img/map-tablet@2x.jpg 2x">
-            <!-- 1x: 320px; 2x: 640px -->
-            <img src="./img/map-mobile.jpg" srcset="./img/map-mobile@2x.jpg 2x" width="320" height="250" alt="Наш офис по адресу: Большая Конюшенная улица, дом 19/8, Санкт-Петербург">
-          </picture>
-          <ul class="page-footer__contacts-list">
-            <li class="page-footer__contacts-item page-footer__contacts-item--mail">
-              <a href="#">
-                <!--href="mailto:puteshestviemechta@gmail.ru"-->
-                puteshestviemechta@gmail.ru
-              </a>
-            </li>
-            <li class="page-footer__contacts-item page-footer__contacts-item--phone">
-              <a href="#">
-                <!--href="tel:+749978468446"-->
-                +7 (499) -784-684-46
-              </a>
-            </li>
-          </ul>
-        </div>
-      </footer>
     </main>
+    <footer class="page-footer" id="contacts">
+      <div class="page-footer__wrapper">
+        <h2>
+          Как нас найти?
+        </h2>
+        <p>
+          Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19
+        </p>
+        <picture>
+          <source type="image/webp" media="(min-width: 1024px)" srcset="./img/map-desktop.webp 1x, ./img/map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="./img/map-tablet.webp 1x, ./img/map-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="./img/map-mobile.webp 1x, ./img/map-mobile@2x.webp 2x">
+          <!-- 1x: 957px; 2x: 1914px -->
+          <source media="(min-width: 1024px)" srcset="./img/map-desktop.jpg 1x, ./img/map-desktop@2x.jpg 2x">
+          <!-- 1x: 698px; 2x: 1396px -->
+          <source media="(min-width: 768px)" srcset="./img/map-tablet.jpg 1x, ./img/map-tablet@2x.jpg 2x">
+          <!-- 1x: 320px; 2x: 640px -->
+          <img src="./img/map-mobile.jpg" srcset="./img/map-mobile@2x.jpg 2x" width="320" height="250" alt="Наш офис по адресу: Большая Конюшенная улица, дом 19/8, Санкт-Петербург">
+        </picture>
+        <ul class="page-footer__contacts-list">
+          <li class="page-footer__contacts-item page-footer__contacts-item--mail">
+            <a href="mailto:puteshestviemechta@gmail.ru">
+              <svg width="26" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24.23 0H1.77C.77 0 0 .76 0 1.76v16.48C0 19.24.77 20 1.77 20h22.46c1 0 1.77-.76 1.77-1.76V1.76c0-1-.77-1.76-1.77-1.76Zm0 17-4.67-4.65a.86.86 0 0 0-1.24 0 .85.85 0 0 0 0 1.24l4.67 4.65H3l4.67-4.65a.85.85 0 0 0 0-1.24.86.86 0 0 0-1.24 0L1.77 17V5.7l10.64 8c.18.12.35.18.53.18.18 0 .36-.06.53-.17l10.76-8V17Zm0-15.24v1.71l-11.29 8.35L1.77 3.47v-1.7h22.46Z" fill="#0AD9C6"></path>
+              </svg>
+              puteshestviemechta@gmail.ru
+            </a>
+          </li>
+          <li class="page-footer__contacts-item page-footer__contacts-item--phone">
+            <a href="tel:+749978468446">
+              <svg width="22" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.46 6.74c-.09-1.2.18-2.38.88-3.33a4.12 4.12 0 0 1 2.36-1.6c.8-.24 1.34.05 1.57.95.33 1.34.8 2.68.98 4.1.05.61-.35 1.5-.78 1.94-1.1 1.08-.87 1.86-.04 3.48.26.53.66 1.43 1.46 2.63.83 1.2 1.26 1.85 2.33 1.3 1.18-.59 2.04-.2 2.93.75.6.7 1.27 1.29 1.87 1.98.87 1.03.83 1.74.15 2.47-1.23 1.34-3.26 1.78-4.77.88a9.7 9.7 0 0 1-2.32-1.87A29.96 29.96 0 0 1 3.8 8.88c-.2-.74-.3-1.48-.34-2.14Z" stroke="#0AD9C6" stroke-width="2" stroke-miterlimit="10"></path>
+              </svg>
+              +7 (499) -784-684-46
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
     <script src="js/script.js"></script>
   </body>
 </html>

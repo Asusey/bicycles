@@ -1,6 +1,5 @@
 .callback p {
   font-weight: 600;
-  letter-spacing: -0.005em;
   color: $white;
 }
 
@@ -12,6 +11,10 @@
   opacity: 0.5;
 }
 
+.callback__list input:hover {
+  color: $turquoise;
+}
+
 .callback__list button {
   font-size: 15px;
   line-height: 24px;
@@ -21,6 +24,10 @@
   border-radius: 6px;
   border: none;
   cursor: pointer;
+}
+
+.callback__list button:hover {
+  opacity: 0.7;
 }
 
 @media (min-width: $min-desktop-whidth) {
