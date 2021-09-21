@@ -13,7 +13,7 @@
   padding: 0;
   margin: 0 auto;
   list-style: none;
-  display: grid;
+  display: flex;
   justify-content: center;
 }
 
@@ -45,9 +45,14 @@
   }
 
   .advantages__list {
-    grid-template-columns: 250px 250px 250px 250px;
-    gap: 0.5%;
+    margin: 0 auto;
+    max-width: 1165px;
     padding-top: 51px;
+    justify-content: space-between;
+  }
+
+  .advantages__item {
+    max-width: 260px;
   }
 }
 
@@ -64,6 +69,7 @@
   }
 
   .advantages__list {
+    display: grid;
     grid-template-columns: 263px 263px;
     gap: 1.8em;
   }
@@ -86,6 +92,7 @@
   }
 
   .advantages__list {
+    display: grid;
     grid-template-columns: 263px;
     justify-content: center;
     gap: 40px;

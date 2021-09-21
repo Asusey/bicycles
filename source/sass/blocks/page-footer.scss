@@ -95,7 +95,8 @@
   }
 
   .page-footer__contacts-list {
-    padding: 10px 0 55px 0;
+    padding: 8px 0;
+    padding-bottom: 55px;
     width: 559px;
   }
 
@@ -109,6 +110,7 @@
 
   .page-footer__contacts-item--mail {
     margin-right: 96px;
+    padding-top: 3px;
   }
 
   .page-footer__contacts-item--phone svg {
