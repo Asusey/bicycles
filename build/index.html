@@ -76,7 +76,8 @@
               <label class="visually-hidden" for="phone">
                 Номер телефона
               </label>
-              <input id="phone" type="tel" name="phone" placeholder="Введите Ваш номер телефона" pattern="[+]7\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" title="Используйте формат: +7 (777) 777-77-77" required="">
+              <input id="phone" type="tel" name="phone" placeholder="Введите Ваш номер телефона" maxlength="12" minlength="12" required=""><!--title="Используйте формат: +7 (777) 777-77-77"
+              pattern="[+]7\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"-->
               <button type="submit">
                 Подобрать велосипед мечты
               </button>
@@ -184,8 +185,8 @@
             В этом видео мы подробно расскажем про особенности выбора велосипеда
             для себя.
           </p>
-          <video width="929" height="522" controls="controls" poster="./img/video-bike-desktop.jpg"></video>
-          <button class="promo__button" type="button"></button>
+          <video width="929" height="522" poster="./img/video-bike-desktop.jpg"></video>
+          <button type="button"></button>
         </div>
       </section>
     </main>

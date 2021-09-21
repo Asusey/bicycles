@@ -26,4 +26,18 @@
       document.getElementsByTagName('body')[0].style.overflow = 'scroll';
     });
   });
+
+  var input = document.getElementById('phone');
+
+  input.addEventListener('focus', function () {
+    if (!/^\+\d*$/.test(input.value)) {
+      input.value = '+7';
+    }
+  });
+
+  input.addEventListener('keypress', function (evt) {
+    if (!/\d/.test(evt.key)) {
+      evt.preventDefault();
+    }
+  });
 })();

@@ -36,7 +36,7 @@
   margin-top: 56px;
 }
 
-.promo__button {
+.promo button {
   position: relative;
   padding: 0;
   width: 65px;
@@ -57,7 +57,7 @@
   }
 }
 
-.promo__button::after {
+.promo button::after {
   position: absolute;
   content: "";
   top: 22px;
@@ -88,13 +88,13 @@
     margin-top: 40px;
   }
 
-  .promo__button {
+  .promo button {
     width: 90px;
     height: 90px;
     margin-top: -185px;
   }
 
-  .promo__button::after {
+  .promo button::after {
     position: absolute;
     content: "";
     top: 33px;
@@ -102,11 +102,6 @@
     border-top: 13px solid transparent;
     border-left: 17px solid $black;
     border-bottom: 12px solid transparent;
-  }
-
-  .promo__button svg {
-    width: 18px;
-    height: 25px;
   }
 }
 
@@ -131,7 +126,7 @@
     margin-top: 54px;
   }
 
-  .promo__button {
+  .promo button {
     margin-top: -114px;
   }
 }
