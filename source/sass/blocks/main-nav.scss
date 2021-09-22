@@ -2,6 +2,10 @@
   color: $turquoise;
 }
 
+.main-nav__toggle:hover {
+  opacity: 0.7;
+}
+
 @media (min-width: $min-desktop-whidth) {
   .main-nav__list {
     list-style: none;
