@@ -1,8 +1,14 @@
 .intro {
+  background-image: url("../img/bike-bg-desktop.webp");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bike-bg-desktop@2x.webp");
+  }
+
   background-color: $dark-gray;
   background-position: 75% 7px;
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .intro a {
@@ -23,14 +29,6 @@
 }
 
 @media (min-width: $min-desktop-whidth) {
-  .intro {
-    background-image: url("../img/bike-bg-desktop.webp");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/bike-bg-desktop@2x.webp");
-    }
-  }
-
   .intro__wrapper {
     margin: 0 auto;
     margin-right: 54%;

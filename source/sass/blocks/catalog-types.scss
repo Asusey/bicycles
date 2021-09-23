@@ -77,9 +77,16 @@
 
   .catalog-types__list {
     padding-bottom: 149px;
-    display: flex;
-    justify-content: space-between;
-    max-width: 1126px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+    max-width: 1131px;
+  }
+
+  .catalog-types__item img {
+    height: auto;
+    width: 100%;
+    max-width: 342px;
   }
 
   .catalog-types p {
@@ -87,26 +94,18 @@
   }
 
   .catalog-types__item:first-child img {
-    width: 342px;
-    height: 503px;
     margin-top: 28px;
   }
 
   .catalog-types__item:nth-child(3n+4) img {
-    width: 342px;
-    height: 503px;
     margin-top: 28px;
   }
 
   .catalog-types__item:nth-child(3n+2) img {
-    width: 342px;
-    height: 566px;
     margin-top: 57px;
   }
 
   .catalog-types__item:nth-child(3n+3) img {
-    width: 342px;
-    height: 513px;
     margin-top: 18px;
   }
 
