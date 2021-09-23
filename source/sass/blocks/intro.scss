@@ -24,10 +24,10 @@
 
 @media (min-width: $min-desktop-whidth) {
   .intro {
-    background-image: url("../../img/bike-bg-desktop.webp");
+    background-image: url("../img/bike-bg-desktop.webp");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/bike-bg-desktop@2x.webp");
+      background-image: url("../img/bike-bg-desktop@2x.webp");
     }
   }
 
@@ -63,10 +63,10 @@
 
 @media screen and (min-width: $min-mobile-whidth) and (max-width: $max-tablet-whidth) {
   .intro {
-    background-image: url("../../img/bike-bg-tablet.webp");
+    background-image: url("../img/bike-bg-tablet.webp");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/bike-bg-tablet@2x.webp");
+      background-image: url("../img/bike-bg-tablet@2x.webp");
     }
   }
 
@@ -97,11 +97,11 @@
 
 @media screen and (min-width: $min-mobile-whidth) and (max-width: $max-mobile-whidth) {
   .intro {
-    background-image: url("../../img/bike-bg-mobile.webp");
+    background-image: url("../img/bike-bg-mobile.webp");
     background-position: 39% -1px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/bike-bg-mobile@2x.webp");
+      background-image: url("../img/bike-bg-mobile@2x.webp");
     }
   }
 
