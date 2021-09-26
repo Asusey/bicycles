@@ -3,12 +3,12 @@
   color: $white;
 }
 
-.callback__list input::-webkit-input-placeholder {
+.callback__list input::placeholder {
   font-family: $font-stack;
   font-size: 15px;
-  line-height: 24px;
   color: $input-gray;
   opacity: 0.5;
+  overflow: visible;
 }
 
 .callback__list input:hover {
