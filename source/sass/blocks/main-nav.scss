@@ -122,6 +122,7 @@
     height: 100vh;
     z-index: 2;
     overflow: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   .main-nav--opened .main-nav__toggle {

@@ -27,7 +27,6 @@
 }
 
 .page-footer a {
-  //display: block;
   color: $black;
   opacity: 0.5;
   font-size: 16px;
@@ -35,6 +34,10 @@
   &:hover {
     opacity: 1;
   }
+}
+
+.page-footer__contacts-item {
+  max-width: 285px;
 }
 
 @media screen and (min-width: $min-desktop-whidth) {
@@ -67,7 +70,7 @@
   }
 
   .page-footer__contacts-item:nth-child(even) {
-    margin-left: 45px;
+    margin-left: 44px;
   }
 
   .page-footer__contacts-item--mail svg {
