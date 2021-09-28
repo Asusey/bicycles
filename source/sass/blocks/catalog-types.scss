@@ -23,6 +23,7 @@
   border-radius: 10px;
   background-color: $light-gray;
   margin-bottom: 12px;
+  position: relative;
 }
 
 .catalog-types h2 {
@@ -43,6 +44,22 @@
   &:hover {
     color: $turquoise;
   }
+}
+
+.catalog-types__item--road {
+  position: relative;
+}
+
+.catalog-types__item--road::before {
+  position: absolute;
+  content: "";
+  top: 185px;
+  left: -59px;
+  width: 180px;
+  height: 180px;
+  border: 28px solid $turquoise;
+  border-radius: 50%;
+  box-sizing: border-box;
 }
 
 @media screen and (min-width: $min-desktop-whidth) {
@@ -75,64 +92,47 @@
     position: relative;
   }
 
-  .catalog-types__item--road {
-    position: relative;
-  }
-
-  .catalog-types__item--road::before {
-    position: absolute;
-    content: "";
-    top: 185px;
-    left: -59px;
-    width: 180px;
-    height: 180px;
-    border: 28px solid $turquoise;
-    border-radius: 50%;
-    box-sizing: border-box;
-    margin: auto;
-  }
-
   .catalog-types__item--mountain {
     position: relative;
-  }
 
-  .catalog-types__item--mountain::before {
-    position: absolute;
-    content: "";
-    width: 47px;
-    height: 47px;
-    border: 8px solid $turquoise;
-    top: 39px;
-    left: -16px;
-    box-sizing: border-box;
-    z-index: 1;
-  }
+    &::before {
+      position: absolute;
+      content: "";
+      width: 47px;
+      height: 47px;
+      border: 8px solid $turquoise;
+      top: 39px;
+      left: -16px;
+      box-sizing: border-box;
+      z-index: 1;
+    }
 
-  .catalog-types__item--mountain::after {
-    position: absolute;
-    content: "";
-    width: 47px;
-    height: 47px;
-    border: 8px solid $turquoise;
-    bottom: 31px;
-    right: -20px;
-    box-sizing: border-box;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 47px;
+      height: 47px;
+      border: 8px solid $turquoise;
+      bottom: 31px;
+      right: -20px;
+      box-sizing: border-box;
+    }
   }
 
   .catalog-types__item--kids {
     position: relative;
-  }
 
-  .catalog-types__item--kids::after {
-    position: absolute;
-    content: "";
-    width: 95px;
-    height: 95px;
-    border: 17px solid $turquoise;
-    top: -13px;
-    right: -34px;
-    box-sizing: border-box;
-    border-radius: 50%;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 95px;
+      height: 95px;
+      border: 17px solid $turquoise;
+      top: -13px;
+      right: -34px;
+      box-sizing: border-box;
+      border-radius: 50%;
+    }
   }
 
   .catalog-types p {
@@ -185,6 +185,14 @@
     padding-bottom: 50px;
   }
 
+  .catalog-types__item--road::before {
+    top: 200px;
+    left: -37px;
+    width: 127px;
+    height: 127px;
+    border: 18px solid $turquoise;
+  }
+
   .catalog-types__item--kids {
     position: relative;
     margin: 0 auto;
@@ -221,6 +229,14 @@
   .catalog-types a {
     padding-top: 0;
     padding-bottom: 42px;
+  }
+
+  .catalog-types__item--road::before {
+    top: 201px;
+    left: 0;
+    width: 127px;
+    height: 127px;
+    border: 18px solid $turquoise;
   }
 
   .catalog-types__item--kids {
